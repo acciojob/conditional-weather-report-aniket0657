@@ -1,19 +1,43 @@
-import React from 'react';
+import React from "react"
 
-function WeatherDisplay({ weather }) {
-  const temperatureStyle = {
-    color: weather.temperature > 20 ? 'red' : 'blue',
-  };
 
+const WeatherDisplay = ({data})=>{
+    const {temperature,conditions} = data;
   return (
-    <div>
-      <p>
-        Temperature: <span style={temperatureStyle}>{weather.temperature}</span>
-      </p>
-      <p>Conditions: {weather.conditions}</p>
+  <div>
+    <p>Temperature: {temperature}</p><span style={{color:temperature>20?"rgb(255, 0, 0)":"blue"}}></span>
+
+    <p>Conditions: {conditions}</p>
     </div>
-  );
+)
 }
 
-export default WeatherDisplay;
+export default WeatherDisplayimport React from "react"
 
+
+const WeatherDisplay = ({data})=>{
+    const {temperature,conditions} = data;
+  return (
+  <div>
+    <p>Temperature: {temperature}</p><span style={{color:temperature>20?"rgb(255, 0, 0)":"blue"}}></span>
+
+    <p>Conditions: {conditions}</p>
+    </div>
+)
+}
+
+export default WeatherDisplayimport React from "react"
+
+
+const WeatherDisplay = ({data})=>{
+    const {temperature,conditions} = data;
+  return (
+  <div>
+    <p>Temperature: {temperature}</p><span style={{color:temperature>20?"rgb(255, 0, 0)":"blue"}}></span>
+
+    <p>Conditions: {conditions}</p>
+    </div>
+)
+}
+
+export default WeatherDisplay
